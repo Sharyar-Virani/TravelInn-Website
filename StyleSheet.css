@@ -1,0 +1,495 @@
+﻿
+body{
+    margin:0;
+}
+
+
+#myNavbar{
+
+    color:white;
+
+}
+
+
+
+
+.blurred-bg-container {
+    background: url('Images/Azad_kashmir.jpg');
+    height: 500px; /* =h */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.blurred-bg-container .content {
+    
+    width:100%; /* =cw */
+    height: 20%; /* =ch */
+    border-radius: 8px;
+    position: absolute;
+    top: 125%; /* =ct */
+    left: 50%; /* =cl */
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.blurred-bg-container .text {
+ 
+    height: 100%;
+    color:white;
+    text-decoration:none;
+}
+.blurred-bg-container li
+{
+    list-style:none;
+    display:inline-block;
+    margin:7px;
+}
+.blurred-bg-container a {
+       color:white;
+    }
+.title
+{
+    padding-left:45px;
+}
+.nichewala p {
+    color: black;
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nichewala
+{
+    padding-top:2.5%;
+    text-align:center;
+
+}
+
+.des p{
+  text-align:center;
+  margin:2% 15%;
+}
+
+.info-first {
+    background-color: turquoise;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 48%;
+    padding: 2.5% 0%;
+    border: 2px solid grey;
+    height:140px;
+}
+
+
+.info {
+        width: 90%;
+        margin-left:35px;
+        margin-bottom:20px;
+    }
+
+.info-first {
+    margin-left:12px;
+    text-align: center;
+    }
+
+
+.info-second {
+    width: 48%;
+    text-align:center;
+    display: inline-block;
+    padding: 2.5% 0%;
+    margin-top:50px;
+    margin-bottom:50px;
+    border: 2px solid grey;
+    height: 140px;
+    color:maroon;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.txt {
+    width: 170px;
+    height: 25px;
+    border: #13664b;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #13664b;
+    background-color: white;
+    margin: 13px;
+    text-align: left;
+}
+
+
+
+
+#line {
+    width: 70%;
+    border-color: #13664b;    
+    background-color: #13664b;
+}
+.navbar-nav.navbar-center {
+   position:relative;
+   left: 50%;
+   transform: translateX(-50%)
+  
+}
+.img-fluid{
+    border-radius:50%;
+    height:150px;
+    width:150px;
+ 
+}
+.img-fluid2{
+    
+       border-radius:50%;
+    height:150px;
+    width:150px;
+}
+
+.img-fluid3{
+    
+       border-radius:50%;
+    height:150px;
+    width:150px;
+
+}
+.img-fluid4{
+    
+       border-radius:50%;
+    height:150px;
+    width:150px;
+
+}
+
+.img-fluid11{
+
+         border-radius:50%;
+    height:150px;
+    width:150px;
+
+}
+
+.img-fluid12{
+         border-radius:50%;
+    height:150px;
+    width:150px;
+
+
+}
+
+.img-fluid13{
+         border-radius:50%;
+    height:150px;
+    width:150px;
+}
+
+.img-fluid14{
+         border-radius:50%;
+    height:150px;
+    width:150px;
+}
+
+
+
+.img-fluid:hover{
+    transform:scale(1.2);
+
+}
+
+.img-fluid2:hover{
+    transform:scale(1.2);
+
+}
+.img-fluid3:hover{
+    transform:scale(1.2);
+
+}
+.img-fluid4:hover{
+    transform:scale(1.2);
+
+}
+.img-fluid11:hover{
+    transform:scale(1.2);
+
+}
+
+.img-fluid12:hover{
+    transform:scale(1.2);
+
+}
+
+.img-fluid13:hover{
+    transform:scale(1.2);
+
+}
+
+.img-fluid14:hover{
+    transform:scale(1.2);
+
+}
+
+
+
+.card-tittle {
+    font-size:30px;
+    font-weight:bold;
+    margin-top:25px;
+}
+.card-text{
+    font-size:18px;
+
+}
+
+.gapping {
+    padding-top:30px;
+    padding-bottom:50px;
+}
+
+.gapping h2{
+    
+    font-size:25px;
+    font-weight:bold;
+}
+
+.gapping p {
+        font-size: 20px;
+        color:#3c3d41;
+        }
+
+#myFooter {
+    background-color: #101010;
+    color: white;
+    padding-top: 20px;
+    
+}
+
+.footer-copyright {
+        margin-top:15px;
+        background-color:white;
+        padding-top: 3px;
+        padding-bottom:3px;
+        text-align: center;
+    }
+
+
+.footer-copyright p {
+            margin: 5px;
+            color: #101010;
+            font-weight:600;
+        }
+
+    #myFooter ul {
+        list-style-type: none;
+        padding-left: 0;
+        line-height: 1.7;
+    }
+
+    #myFooter h5 {
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+
+
+    #myFooter a {
+        color: #d2d1d1;
+        text-decoration: none;
+    }
+
+        #myFooter a:hover,
+        #myFooter a:focus {
+            text-decoration: none;
+            color: white;
+        }
+
+    #myFooter .social-networks {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom:05px;
+    }
+
+        #myFooter .social-networks a {
+            font-size: 32px;
+            color: #f9f9f9;
+            padding: 15px;
+            transition: 0.2s;
+        }
+
+            #myFooter .social-networks a:hover {
+                text-decoration: none;
+            }
+
+    #myFooter .facebook:hover {
+        color: #13664b;
+    }
+
+    #myFooter .google:hover {
+        color: #13664b;
+    }
+
+    #myFooter .twitter:hover {
+        color: #13664b;
+    }
+
+    #myFooter .btn {
+        color: white;
+        background-color: #13664b;
+        border: none;
+        border-radius: 20px;
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        line-height: 25px;
+    }
+
+#myFooter {
+    text-align: center;
+}
+
+
+
+.container {
+    border:12px;
+
+}
+
+
+ #dumyBody{
+    padding:50px;
+    margin-top:50px;
+    background: url(Images/Evening_Mountains_Roads_Hunza_Pakistan_527049_2560x1600.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial ;
+
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 60px;  
+
+}
+.container1 {
+    
+    width:90%;
+}
+
+.col-md-5 {
+    
+    margin-top: 20px;
+    padding:20px;
+    margin-right:100px;
+    
+   
+}
+
+.label {
+    font-size: 20px;
+    
+    font-weight: normal;
+
+}
+
+.input-group {
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+
+.input-group-addon {
+    background: transparent;
+    border-radius: 0px;
+    border:0px;
+    border-bottom: 1px solid white;
+    font-size:  18px;
+    color:white;
+
+
+     
+}
+
+.form-control {
+    background: transparent;
+    border-radius:0px;
+    border:0px;
+    border-bottom:1px solid white;
+    padding: 15px;
+    color: white;
+    font-size:21px;
+
+}
+
+input[type="checkbox"] {
+    height:15px;
+    width:15px;
+
+}
+small {
+    font-size:18px;
+    color: white;
+
+}
+p {
+    font-size:18px;
+    color: white;
+
+}
+.btn-default {
+    border-radius:0px;
+    width:457px;
+    font-size:20px;
+    margin-top:20px;
+    margin-bottom:30px; 
+}
+#singup {
+    display: inline;
+    padding: 5px 5px 5px 5px;
+    margin-right:200px;
+    
+
+
+   
+}
+
+
+h2 {
+    font-size: 50px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 60px;  
+
+}
+
+.myButtpn{
+
+    background-color:#13664b; 
+    margin-bottom:10px; 
+    color:white;
+
+}

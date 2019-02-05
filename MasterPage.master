@@ -1,0 +1,157 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>ADVENTURE TRAVELS</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="./StyleSheet.css" rel="stylesheet" />
+    
+<meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+ 
+  <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#13664b">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+    <ul class="nav navbar-nav">
+      <li><a href="Home.aspx" style="color:white";>Home</a></li>
+      
+        <li><a href="index.html" style="color:white";>Packages</a></li>
+     
+        
+        <li><a href="Tour Managers.aspx" style="color:white";>Tour Managers</a></li>
+        
+        
+         <li><a href="ContactUs.aspx" style="color:white";>Contact Us</a></li>
+    </ul>
+
+
+    <ul class="nav navbar-nav navbar-right">
+            
+   <li><input class="txt" type="text" name="searchKeyword" placeholder=" Search "/></li>      
+        <li><a href="SignUp.aspx" style="color:white";><span class="glyphicon glyphicon-user" style="color:white";></span> Sign Up</a></li>
+      <li><a href="SignUp.aspx"style="color:white";><span class="glyphicon glyphicon-log-in"style="color:white";></span> Login</a></li>
+    </ul>
+  </div>
+      </div>
+</nav>
+        <div>
+
+            <h1 style="font-size:60px; padding:1em; color:#13664b; text-align:center; font-family:Impact,charcoal,sans-serif";> ADVENTURE TRAVELS</h1>
+
+            <p style="font-size:22px; margin-top:-70px; font-weight:bold; color:#13664b; text-align:center;"> TRAVEL AND TOUR COMPANY</p>
+
+        </div>
+        
+        
+        <hr / id="line"/>
+
+  <nav class="navbar navbar-default glyphicon-text-width">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    </div>
+      <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav navbar-center">
+      
+        <li><a href="Kashmir.aspx">KASHMIR</a></li>
+      <li><a href="lahore.aspx">LAHORE</a></li>
+      <li><a href="muree.aspx">MUREE</a></li>
+      <li><a href="gilgit.aspx">GILGIT</a></li>
+      <li><a href="hunza.aspx">HUNZA</a></li>
+      <li><a href="swat.aspx">SWAT</a></li>
+    <li><a href="mansera.aspx">MANSHERA</a></li>
+ <li><a href="naran.aspx">NARAN</a></li>
+    </ul>
+          </div>
+    <ul class="nav navbar-nav navbar-right">
+     
+    </ul>
+  </div>
+    </nav>
+        
+        <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+         <footer id="myFooter">
+        <div class="container-fluid" >
+            <div class="row">
+                
+                <div class="col-sm-3">
+                    <h5>Book Now</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Office Timings</h5>
+                    <ul>
+                        <li><a href="#">Monday - Thursday</a></li>
+                        <li><a href="#"> 9:00 Am- 5:00 Pm (GST)</a></li>
+                        <li><a href="#">Friday & Saturday</a></li>
+                        <li><a href="#"> 10:00 Am- 3:00 Pm (GST)</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Contact us</h5>
+                    <ul>
+                        <li><a href="#">021-090078601</a></li>
+                        <li><a href="#">0333-3131850</a></li>
+                        <li><a href="#">booking_info@adventuretavels.com</a></li>
+                        <li><a href="#">DHA Phase 4 Plot no.2</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="home.aspx" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="home.aspx" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="home.aspx" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default">follow us</button>
+                </div>
+            </div>
+        </div>
+       
+             <div class="footer-copyright">
+            <p>© 2018-2019 COPYRIGHT RESERVED - ADVENTURE TRAVELS</p>
+        </div>
+
+    </footer>
+
+         
+ 
+
+    </form>
+</body>
+</html>

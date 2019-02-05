@@ -1,0 +1,195 @@
+<html>
+
+<head>
+  
+
+   
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="http://localhost:51078/js/jquery.mycart.min.js"></script>
+    <script src="http://localhost:51078/js/jquery.mycart.js"></script>
+    <script src="http://localhost:51078/js/jquery-2.2.3.min.js"></script>
+    <script src="http://localhost:51078/js/bootstrap.min.js"></script>
+  <style>
+  .badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    right: 10px;
+  }
+  .my-cart-icon-affix {
+    position: fixed;
+    z-index: 999;
+  }
+
+      
+  </style>
+</head>
+
+<body class="container">
+
+  <div class="page-header">
+    <h1>Packages    
+     
+    </h1>
+  </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="Images/Evening_Mountains_Roads_Hunza_Pakistan_527049_2560x1600.jpg" width="100%" height="30%">
+
+               <div style="padding-top:10px;  text-align:center;">
+                <p > 7 Days Baltistan <strong>PKR 40000</strong></p>
+
+
+                <a href="Package1.html" class="btn btn-info">Details</a>
+                </div>
+            </div>
+       
+        <div class="col-lg-4">
+            <img src="Images/MuzaffarabadAzadKashmirPakistan472016.jpg" width="100%" height="30%" >
+
+            <div style="padding-top:10px;  text-align:center;">
+                <p> Azad Kashmir <strong>PKR 40000</strong></p>
+
+              <a href="Package2.html" style="position:center;" class="btn btn-info" >Details</a>
+            </div>
+   </div>
+
+    <div class="col-lg-4">
+        <img src="Images/1474878747_Hunza-Embassy-Hotel-Exterior-23.jpg" width="100%" height="30%" >
+        <div style="padding-top:10px; text-align:center">
+
+            <p style="padding-top:1px"> Hunza <strong>PKR 30000</strong></p>
+
+
+            <a href="Package 3.html" class="btn btn-info">Details</a>
+
+        </div>
+    </div>
+    </div>
+        </div>
+
+
+
+    <div class="row" style="padding-top:10px">
+        <div class="col-lg-4">
+            <div style="padding-left:10px; text-align:center">
+            <img src="Images/Lahore-1.jpg" width="105%" height="30%" >
+            
+            
+
+                <p style="padding-top:10px"> Lahore <strong>PKR 16000</strong></p>
+
+
+                <a href="Package4.html" class="btn btn-info">Details</a>
+
+            </div>
+            </div>
+
+        <div class="col-lg-4" s>
+            <img src="Images/maxresdefault.jpg" width="100%" height="30%" style="padding-left:12px;" >
+            <div style="padding-top:10px; text-align:center;">
+
+                <p style="padding-top:1px"> Murree <strong>PKR 12000</strong></p>
+
+
+                <a href="Package5.html" class="btn btn-info">Details</a>
+
+
+            </div>
+            </div>
+
+        <div class="col-lg-4">
+
+            <img src="Images/Naran.jpg" width="100%" height="30%" style="padding-left:12px; align-content:center;">
+            <div style="padding-top:10px; text-align:center;">
+
+                <p style="padding-top:1px"> Naran Kaghan <strong>PKR 20000</strong></p>
+
+
+                <a href="Package6.html" class="btn btn-info">Details</a>
+
+
+
+            </div>
+        </div>
+
+        <div class="rows">
+
+            <div class="col-lg-6">
+                <img src="Images/sawat.jpg" width="100%" height="30%" style="padding-left:12px; padding-top:20px ">
+                <div style="padding-top:10px; text-align:center;">
+
+                    <p style="padding-top:1px"> Swat <strong>33000</strong></p>
+
+
+                    <a href="Package7.html" class="btn btn-info">Details</a>
+
+
+                </div>
+                </div>
+            <div class="col-lg-6">
+                <img src="Images/Mansera.jpg" width="100%" height="30%" style="padding-left:12px; padding-top:20px ">
+                <div style="padding-top:10px; text-align:center;">
+
+                    <p style="padding-top:1px"> Mansera <strong> 25000</strong></p>
+                    <a href="Package8.html" class="btn btn-info">Details</a>
+
+
+
+                </div>
+            </div>
+    
+</div>
+
+
+  <script src="js/jquery-2.2.3.min.js"></script>
+  <script type='text/javascript' src="js/bootstrap.min.js"></script>
+  <script type='text/javascript' src="js/jquery.mycart.js"></script>
+  <script type="text/javascript">
+      $(function () {
+
+          var goToCartIcon = function($addTocartBtn){
+              var $cartIcon = $(".my-cart-icon");
+              var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+              $addTocartBtn.prepend($image);
+              var position = $cartIcon.position();
+              $image.animate({
+                  top: position.top,
+                  left: position.left
+              }, 500 , "linear", function() {
+                  $image.remove();
+              });
+          }
+
+          $('.my-cart-btn').myCart({
+              classCartIcon: 'my-cart-icon',
+              classCartBadge: 'my-cart-badge',
+              affixCartIcon: true,
+              checkoutCart: function(products) {
+                  $.each(products, function(){
+                      console.log(this);
+                  });
+              },
+              clickOnAddToCart: function($addTocart){
+                  goToCartIcon($addTocart);
+              },
+              getDiscountPrice: function(products) {
+                  var total = 0;
+                  $.each(products, function(){
+                      total += this.quantity * this.price;
+                  });
+                  return total * 0.5;
+              }
+          });
+
+      });
+
+    
+  });
+  </script>
+
+</body>
+
+</html>
